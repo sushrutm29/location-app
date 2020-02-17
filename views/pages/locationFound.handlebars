@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<main class="location-result-main">
+    {{#if found}}
+    <div class="found">
+        <p>Latitude: {{latitude}}</p>
+        <p>Longitude: {{longitude}}</p>
+    </div>
+
+    <div id="googleMap"></div>
+    {{/if}}
+    <br>
+    <br>
+    <a href="/" class="back-button" type="text/html">Back to search</a>
+</main>
+
+<script>
+    function myMap() {
+        let latitude = {{{json latitude}}};
+        let longitude = {{{json longitude}}};
+        let location = {lat: latitude, lng: longitude};
+        let mapProp= {
+            center:location,
+            zoom:5,
+        };
+        let map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        let marker = new google.maps.Marker({position: location, map: map});
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
