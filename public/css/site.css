@@ -6,6 +6,7 @@ body, html{
 
 #location-search-form, #location-history-form{
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1{
@@ -42,6 +43,7 @@ input{
 
 .location-result-main, .location-search-main, .location-history-main{
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .back-button{
@@ -58,6 +60,7 @@ input{
 ul{
     font-size: 15px;
     list-style-type: decimal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 dt{
