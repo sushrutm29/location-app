@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+<main class="location-history-main">
+    <form id="location-history-form" action="/history" method="POST">
+        <label for="last-locations" id="last-locations-label">
+            Number of latest locations (Enter 0 to get all locations):
+        </label>
+        <br>
+        <br>
+        <input id="last-locations" name="nLocations" type="number" value="" placeholder="Enter number of latest locations to fetch">
+        <br>
+        <br>
+        <label for="date-min" id="date-min-label">
+            From date:
+        </label>
+        <br>
+        <br>
+        <input id="date-min" name="dateMin" type="date" value="" placeholder="Enter lower date range">
+        <br>
+        <br>
+        <label for="date-max" id="date-max-label">
+            To date:
+        </label>
+        <br>
+        <br>
+        <input id="date-max" name="dateMax" type="date" value="" placeholder="Enter higher date range">
+        <br>
+        <br>
+        <br>
+        <button type="submit">Find locations</button>
+    </form>
+    <br>
+    <br>
+    <a href="/" class="back-button" type="text/html">Back to search</a>
+</main>

@@ -1,5 +1,7 @@
 const location = require('./location');
+const history = require('./history');
 
 module.exports = {
-    location: location
+    location: location,
+    history: history
 };

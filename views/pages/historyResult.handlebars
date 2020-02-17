@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+
+<main class="history-result-main">
+    {{#if locations}}
+        <ul>
+            {{#each locations}}
+            <li>
+                <dl>
+                    <dt>Date:</dt>
+                    <dd>{{date}}</dd>
+                    <dt>I.P.:</dt>
+                    <dd>{{ip}}</dd>
+                    <dt>Latitude:</dt>
+                    <dd>{{latitude}}</dd>
+                    <dt>Longitude:</dt>
+                    <dd>{{longitude}}</dd>
+                </dl>
+            </li>
+            <br>
+            {{/each}}
+        </ul>
+    {{/if}}
+    <a href="/history" class="back-button" type="text/html">Back to location history</a>
+</main>
